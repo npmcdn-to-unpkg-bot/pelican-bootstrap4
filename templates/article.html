@@ -79,7 +79,7 @@
       <p class="standfirst" itemprop="description">{{ article.standfirst|e }}</p>
     {% endif %}
     {% if article.image %}
-      <img class="article-image img-responsive" alt="article header image" itemprop="image"
+      <img class="article-image img-fluid" alt="article header image" itemprop="image"
 		   src="{{ SITEURL }}/images/{{ article.image }}" />
     {% endif %}
     {% include "includes/" + CUSTOM_ARTICLE_PRECONTENT|default('article_precontent.html') ignore missing %}

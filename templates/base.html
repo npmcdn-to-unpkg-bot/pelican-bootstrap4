@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{% block metadesc %}{{ DEFAULT_METADESC|e }}{% endblock %}" />
     <meta name="author" content="{{ AUTHOR }}" />
-    <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
+    <meta name="generator" content="Pelican" />
 	{% block meta_other %}{% endblock %}
     {% if OPEN_GRAPH_FB_APP_ID %}
     <meta property="fb:app_id" content="{{ OPEN_GRAPH_FB_APP_ID }}"/>
@@ -159,7 +159,6 @@
     <footer id="site-footer">
       {% include 'includes/' + CUSTOM_FOOTER|default('footer.html') ignore missing %} 
       {% if SKIP_COLOPHON %}
-      <!-- Site built using Pelican.  Theme based on VoidyBootstrap. -->
       {% else %}
       <address id="site-colophon">
         <p class="text-center text-muted">
@@ -175,7 +174,11 @@
     <!-- javascript -->
     {% if not SKIP_DEFAULT_JS %}   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      {% if BOOTSTRAP_JS %} 
+        <script src="{{ SITEURL }}/theme/js/{{ BOOTSTRAP_JS }}" />
+      {% else %}
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      {% endif %}
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
     {% endif %}
