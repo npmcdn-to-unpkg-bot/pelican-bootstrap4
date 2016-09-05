@@ -2,6 +2,15 @@
 
 <div class="row">
 
+{% if SIDEBAR_BLURB %}
+<div class="col-xs-6 col-md-12">
+    <h4><i class="fa fa-user fa-fw fa-lg"></i> {{ AUTHOR }}</h4>
+    <p>{{ SIDEBAR_BLURB }}</p>
+</ul>
+</div>
+{% endif %}
+
+
 {% if CUSTOM_SOCIAL %}
 {% set socialinc = "includes/" + CUSTOM_SOCIAL %}
 {% include socialinc %}
