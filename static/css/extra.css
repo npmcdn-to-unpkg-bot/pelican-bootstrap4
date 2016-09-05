@@ -14,6 +14,18 @@
     font-size: 60%;
 }
 
-.footer-content {
-    padding-top: 2rem;
+.home-top {
+    padding-bottom: 2rem;
+}
+
+.disabled {
+    pointer-events: none;
+    background-color: lightgray;
+    color: darkgray;
+    cursor: default;
+}
+
+.active {
+    background-color: #0275d8;
+    color: white;
 }
