@@ -90,6 +90,9 @@
               </li>
             {% endfor %}
           {% endif %}
+          {% if showcase_page %}
+          <li class="nav-item {% block showcase_active %}{% endblock %}"><a class="nav-link" href="{{ SITEURL }}/{{ showcase_page.url }}">{{             showcase_page.title }}</a></li>
+          {% endif %}
             <li class="nav-item {% block archive_active %}{% endblock %}">
               <a class="nav-link" href="{{ SITEURL }}/{{ ARCHIVES_URL|default('archives.html') }}">Archives</a>
             </li>
