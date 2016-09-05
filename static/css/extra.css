@@ -29,3 +29,7 @@
     background-color: #0275d8;
     color: white;
 }
+
+.navactive {
+    font-weight: bold;
+}
