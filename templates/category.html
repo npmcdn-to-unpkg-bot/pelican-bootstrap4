@@ -19,14 +19,14 @@
 {% include "includes/" + CUSTOM_CONTENT_TOP_CATEGORY %}
 {% endif %}
 <ol class="breadcrumb">
-    <li><a href="{{ SITEURL }}/" title="Home" rel="home">
+    <li class="breadcrumb-item"><a href="{{ SITEURL }}/" title="Home" rel="home">
 		<i class="fa fa-home fa-fw fa-lg"></i> </a></li>
 {% if CATEGORIES_URL %}
-    <li><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}">Categories </a></li>
+    <li class="breadcrumb-item"><a href="{{ SITEURL }}/{{ CATEGORIES_URL }}">Categories </a></li>
 {% else %}
-    <li>Categories </li>
+    <li class="breadcrumb-item">Categories </li>
 {% endif %}
-    <li class="active">{{ category }}</li>
+    <li class="breadcrumb-item navactive">{{ category }}</li>
 </ol>
 {% endblock content_header %}
 
