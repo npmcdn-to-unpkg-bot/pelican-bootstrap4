@@ -6,8 +6,15 @@
     {% endif %}
     in 
     <a href="{{ SITEURL }}/{{ article.category.url }}">
-      {{ article.category }}</a>
-    &nbsp;&nbsp;
+      {{ article.category }}.</a>
+    {% if article.tags %}
+    Tags: 
+      {% for tag in article.tags %}
+        <a href="{{ SITEURL }}/{{ tag.url }}">
+            <i class="fa fa-tag fa-fw fa-lg"></i>{{ tag.name }}
+        </a>
+      {% endfor %}
+    {% endif %}
     {% if PDF_PROCESSOR %}
     <span class="label">
       <a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">PDF</a>
