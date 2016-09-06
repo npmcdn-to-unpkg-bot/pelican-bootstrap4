@@ -1,5 +1,6 @@
 <div class="article-header-info">
   <p>
+  <small>
     {% if article.author %}
       Posted by <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
     {% endif %}
@@ -14,5 +15,6 @@
     &nbsp;&nbsp;
     {% endif %}
     {% include "includes/translations.html" %}
+  </small>
   </p>
 </div> <!-- /.article-header-info -->
