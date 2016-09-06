@@ -149,7 +149,26 @@
       <div id="footer-content" class="jumbotron">
           <div class="container">
       <address id="site-colophon">
-        Created by <a class="orangelink" href="http://sevag.io">Sevag Hanssian</a>, powered by <a class="orangelink" href="http://blog.getpelican.com/">Pelican</a> and <a class="orangelink" href="https://github.com/sevagh/pelican-bootstrap4">Bootstrap 4</a>, hosted on <a class="orangelink" href="https://aws.amazon.com/">AWS</a>.
+          <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+              <a href="{{ SITEURL }}/" rel="home">
+                  <i class="fa fa-home fa-fw fa-lg"></i>Home</a>
+              </li>
+              <li class="breadcrumb-item">
+              <a href="#top"><i class="fa fa-angle-double-up fa-fw fa-lg"></i>Top</a>
+              </li>
+              <li class="breadcrumb-item">
+                  <a class="orangelink" href="{{ SITEURL }}">{{ AUTHOR }}</a>
+              </li>
+              <li class="breadcrumb-item">
+                  <a class="orangelink" href="http://blog.getpelican.com/">Pelican</a> 
+              </li>
+              <li class="breadcrumb-item">
+                  <a class="orangelink" href="https://github.com/sevagh/pelican-bootstrap4">Bootstrap 4</a>
+              </li>
+              <li class="breadcrumb-item">
+                  <a class="orangelink" href="https://aws.amazon.com/">AWS</a>
+              </li>
       </address><!-- /colophon  -->
           </div>
       </div>
