@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block showcase_active %}navactive{% endblock %}
 {% block title %}{{ showcase_page.title }}{% endblock %}
-{% block content %}
+{% block content_body %}
 <section id="content" class="body">
         <h1 class="entry-title">{{ showcase_page.title }}</h1>
         <br>
@@ -9,7 +9,8 @@
           {% if showcase_entry.thumbnail %}
             <img src="{{ showcase_entry.thumbnail }}">
           {% endif %}
-          <a href="{{ showcase_entry.url }}">{{ showcase_entry.title }} <i class="icon-external-link"></i></a> {{ showcase_entry.summary }}
+          <a href="{{ showcase_entry.url }}">{{ showcase_entry.title }} <i class="icon-external-link"></i></a>
+        {{ showcase_entry.summary }}
         {% endfor %}
 </section>
 {% endblock %}

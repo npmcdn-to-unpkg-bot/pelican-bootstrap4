@@ -97,11 +97,6 @@
             <li class="nav-item {% block archive_active %}{% endblock %}">
               <a class="nav-link" href="{{ SITEURL }}/{{ ARCHIVES_URL|default('archives.html') }}">Archives</a>
             </li>
-          {% if FEED_ALL_ATOM %}
-            <li class="nav-item"><a class="nav-link" href="{{ FEED_DOMAIN }}/{{ FEED_ALL_ATOM }}" 
-                   type="application/atom+xml" rel="alternate">
-                <i class="fa fa-rss fa-fw fa-lg"></i> </a></li>
-          {% endif %}
     </ul>
   </div>
     </div>
@@ -151,12 +146,12 @@
       {% include 'includes/' + CUSTOM_FOOTER|default('footer.html') ignore missing %} 
       {% if SKIP_COLOPHON %}
       {% else %}
-      <div id="footer-content" class="container">
+      <div id="footer-content" class="jumbotron">
+          <div class="container">
       <address id="site-colophon">
-        <p class="text-muted">
-        Created by <a href="http://sevag.io">Sevag Hanssian</a>, powered by <a href="http://blog.getpelican.com/">Pelican</a> and <a href="https://github.com/sevagh/pelican-bootstrap4">Bootstrap 4</a>, hosted on <a href="https://aws.amazon.com/">AWS</a>.
-        </p>
+        Created by <a class="orangelink" href="http://sevag.io">Sevag Hanssian</a>, powered by <a class="orangelink" href="http://blog.getpelican.com/">Pelican</a> and <a class="orangelink" href="https://github.com/sevagh/pelican-bootstrap4">Bootstrap 4</a>, hosted on <a class="orangelink" href="https://aws.amazon.com/">AWS</a>.
       </address><!-- /colophon  -->
+          </div>
       </div>
       {% endif %}
     </footer>
