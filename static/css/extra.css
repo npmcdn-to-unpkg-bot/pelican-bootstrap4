@@ -40,6 +40,10 @@ img {
     height: auto;
 }
 
+.thumbnail {
+    display: inline-block; 
+}
+
 .orangelink {
     color: #d86502;
 }

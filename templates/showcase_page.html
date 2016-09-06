@@ -7,7 +7,7 @@
         <br>
         {% for showcase_entry in showcase_entries %}
           {% if showcase_entry.thumbnail %}
-            <img src="{{ showcase_entry.thumbnail }}">
+            <img class="thumbnail" src="{{ showcase_entry.thumbnail }}">
           {% endif %}
           <a href="{{ showcase_entry.url }}">{{ showcase_entry.title }} <i class="icon-external-link"></i></a>
         {{ showcase_entry.summary }}
