@@ -72,9 +72,9 @@
 <nav class="navbar navbar-dark bg-inverse">
     <div class="container">
     <a class="navbar-brand" href="{{ SITEURL }}" rel="home">
-          <i class="fa fa-home fa-fw fa-lg"> </i> {{ HOME_LABEL|default('') }}</a>
+          <i class="fa fa-home fa-fw fa-lg navcolor"> </i> {{ HOME_LABEL|default('') }}</a>
       </a>
-  <button class="navbar-toggler hidden-sm-up whitebtn" type="button" data-toggle="collapse" data-target="#collapsing-navbar" aria-controls="#collapsing-navbar" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapsing-navbar" aria-controls="#collapsing-navbar" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
     &#9776;
   </button>
   <div class="collapse navbar-toggleable-xs" id="collapsing-navbar">
@@ -148,10 +148,11 @@
       {% include 'includes/' + CUSTOM_FOOTER|default('footer.html') ignore missing %} 
       {% if SKIP_COLOPHON %}
       {% else %}
-      <div id="footer-content" class="jumbotron">
+      <div id="footer-content" class="customfooter">
           <div class="container">
       <address id="site-colophon">
-          <ol class="breadcrumb">
+          <ol class="breadcrumb" style="background-color: #373a3c">
+            <small>
               <li class="breadcrumb-item">
               <a href="{{ SITEURL }}/" rel="home">
                   <i class="fa fa-home fa-fw fa-lg"></i>Home</a>
@@ -160,18 +161,16 @@
               <a href="#top"><i class="fa fa-angle-double-up fa-fw fa-lg"></i>Top</a>
               </li>
               <li class="breadcrumb-item">
-                  <a class="orangelink" href="{{ SITEURL }}/pages/about.html">{{ AUTHOR }}</a>
+                  By <a href="{{ SITEURL }}/pages/about.html">{{ AUTHOR }}</a> <i class="fa fa-copyright fa-fw"></i>2016
               </li>
               <li class="breadcrumb-item">
-                  <a class="orangelink" href="http://blog.getpelican.com/">Pelican</a> 
+                  Powered by <a href="http://blog.getpelican.com/">Pelican</a> and <a href="https://github.com/sevagh/pelican-bootstrap4">Bootstrap 4</a>
               </li>
               <li class="breadcrumb-item">
-                  <a class="orangelink" href="https://github.com/sevagh/pelican-bootstrap4">Bootstrap 4</a>
+                  Hosted on <a href="https://aws.amazon.com/">AWS</a>
               </li>
-              <li class="breadcrumb-item">
-                  <a class="orangelink" href="https://aws.amazon.com/">AWS</a>
-              </li>
-      </address><!-- /colophon  -->
+          </ol>
+        </address><!-- /colophon  -->
           </div>
       </div>
       {% endif %}

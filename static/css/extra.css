@@ -14,8 +14,15 @@
     font-size: 80%;
 }
 
-.home-top {
-    padding-bottom: 2rem;
+.customfooter {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #373a3c;
+    color: white;
+}
+
+.customfooter a:link {
+    color: #55b0f3;
 }
 
 .disabled {
@@ -56,6 +63,6 @@ pre {
     background-color: #f1f1f1;
 }
 
-.whitebtn {
-    color: white;
+.navcolor {
+    color: #55b0f3;
 }
