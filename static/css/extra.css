@@ -25,6 +25,18 @@
     color: #55b0f3;
 }
 
+.customfooter a:visited {
+    color: #55b0f3;
+}
+
+.customfooter a:hover {
+    color: #55b0f3;
+}
+
+.customfooter a:active {
+    color: #55b0f3;
+}
+
 .disabled {
     pointer-events: none;
     background-color: lightgray;
