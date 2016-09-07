@@ -15,10 +15,15 @@
 }
 
 .customfooter {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
     background-color: #373a3c;
     color: white;
+    overflow: auto;
+}
+
+.breadcrumbcust {
+    background-color: #373a3c;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .customfooter a:link {
@@ -78,3 +83,4 @@ pre {
 .navcolor {
     color: #55b0f3;
 }
+
