@@ -70,7 +70,7 @@
     {% for num in articles_paginator.page_range %}
       <li class="page-item">
         {% if num == articles_page.number %}
-          <a class="page-link active" href="{{ SITEURL }}/{{ articles_paginator.page(num).url }}">{{ num }}</a>
+          <a class="page-link pagelinkactive active" href="{{ SITEURL }}/{{ articles_paginator.page(num).url }}">{{ num }}</a>
         {% else %}
           <a class="page-link" href="{{ SITEURL }}/{{ articles_paginator.page(num).url }}">{{ num }}</a>
         {% endif %}

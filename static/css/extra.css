@@ -25,12 +25,16 @@
     cursor: default;
 }
 
-.active {
+.pagelinkactive {
     background-color: #0275d8;
     color: white;
 }
 
-.navactive {
+.active {
+    color: white;
+}
+
+.breadcrumbactive {
     font-weight: bold;
 }
 
@@ -50,4 +54,8 @@ img {
 
 pre {
     background-color: #f1f1f1;
+}
+
+.whitebtn {
+    color: white;
 }
